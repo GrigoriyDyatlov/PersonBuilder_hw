@@ -81,9 +81,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return (name + " " + surname + "\n" +
-                "age" + age + "\n" +
-                "address" + address + "\n");
+        return (name + " " + surname + "\n ");
     }
 
     @Override
