@@ -81,7 +81,11 @@ public class Person {
 
     @Override
     public String toString() {
-        return (name + " " + surname + "\n ");
+        if (age != -1 && address != null) {
+            return String.format("%s %s, age %d, address %s", name, surname, age, address);
+        } else if (age == -1 && address != null) {
+            return  String.format("%s %s, address %s", name, surname, address);
+        } else return String.format("%s %s", name, surname);
     }
 
     @Override
