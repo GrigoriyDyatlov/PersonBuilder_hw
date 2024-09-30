@@ -31,7 +31,7 @@ public class Person {
         if (age >= 0) {
             this.age = age;
         } else {
-            IllegalArgumentException e = new IllegalArgumentException();
+            IllegalStateException e = new IllegalStateException();
             throw e;
         }
     }
